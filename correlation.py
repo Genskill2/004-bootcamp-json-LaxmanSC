@@ -50,10 +50,9 @@ def compute_correlations(str):
        dict_phi[unique_e]= phi;
     return dict_phi;
 
-def diagnose():
+def diagnose(str):
     maxim = float(-1);
     minim = float(1);
-    str = 'journal.json';
     dict = compute_correlations(str);
     for key in dict.keys():
         val =float(dict[key]);
